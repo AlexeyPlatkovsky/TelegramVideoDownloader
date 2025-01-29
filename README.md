@@ -20,7 +20,7 @@ This Python script downloads videos from a specified Telegram channel, supports 
 
 
 ### Configuration File
-Create a `config.ini` file in the same directory as the script with the following content:
+Modife (or create if it is absent) a `config.ini` file in the same directory as the script with the following content:
 
 ```ini
 [telegram]
