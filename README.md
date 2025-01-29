@@ -105,6 +105,8 @@ The `get_channel_id.py` script helps fetch the IDs of all accessible Telegram ch
 3. **Note the channel_id:**
  - Look for the desired channel in the script output.  
  - Copy its ID and update the `channel_id` field in your `config.ini` file.
+ - 
+---
 
 ### Logs
 - Logs are stored in the `logs` folder.
