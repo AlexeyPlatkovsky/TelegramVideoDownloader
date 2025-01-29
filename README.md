@@ -31,10 +31,19 @@ MESSAGE_TEXT = YOUR_HASHTAG_OR_TEXT_FILTER
 ```
 
 Replace `YOUR_API_ID`, `YOUR_API_HASH`, `YOUR_CHANNEL_ID`, and `YOUR_HASHTAG_OR_TEXT_FILTER` with the appropriate values:
-- **api_id** and **api_hash**: Obtain these by creating an application on the [Telegram API site](https://core.telegram.org/api/obtaining_api_id#obtaining-api-id).
-- **channel_id**: The ID of the Telegram channel you want to download videos from. To find proper channel ID, you can use **get_channel.py** script.
+#### **How to Obtain These Values:**
 
-- **MESSAGE_TEXT**: A text filter or hashtag to identify relevant messages, e.g. `'#Hammer_and_Bolter'`
+- **api_id** and **api_hash:**
+  - Go to [the Telegram API site](https://core.telegram.org/api/obtaining_api_id#obtaining-api-id) 
+  - Log in to the Telegram API Development Tools.
+  - Create a new application to obtain the `api_id` and `api_hash`.
+
+- **channel_id:**
+  - Use the `get_channel_id.py` script (explained below) to fetch the ID of the target channel.
+
+- **MESSAGE_TEXT:**
+  - Specify the hashtag or keyword to filter messages containing videos. For example, `#MyVideos`.
+
 
 ---
 
@@ -60,7 +69,25 @@ The script automatically creates a `logs` and `download` folder in the script di
 ---
 
 ### How to Use
-#### Command-Line Execution
+
+#### Purpose of `get_channel_id.py`
+
+The `get_channel_id.py` script helps fetch the IDs of all accessible Telegram channels and chats for your account. These IDs are necessary for configuring the `channel_id` field in the `config.ini` file.
+
+#### How to Use:
+1. **Run the script:**
+   ```bash
+   python get_channel_id.py
+   ```
+2. **Authenticate with Your Telegram Account:**
+ - Enter your Telegram phone number. 
+ - Verify the login by entering the code sent to your Telegram app.  
+
+3. **Note the channel_id:**
+ - Look for the desired channel in the script output.  
+ - Copy its ID and update the `channel_id` field in your `config.ini` file.
+
+#### Main Script Command-Line Execution
 Run the script from the command line as follows:
 
 ```bash
