@@ -34,7 +34,7 @@ Replace `YOUR_API_ID`, `YOUR_API_HASH`, `YOUR_CHANNEL_ID`, and `YOUR_HASHTAG_OR_
 - **api_id** and **api_hash**: Obtain these by creating an application on the [Telegram API site](https://core.telegram.org/api/obtaining_api_id#obtaining-api-id).
 - **channel_id**: The ID of the Telegram channel you want to download videos from. To find proper channel ID, you can use **get_channel.py** script.
 
-- **MESSAGE_TEXT**: A text filter or hashtag to identify relevant messages.
+- **MESSAGE_TEXT**: A text filter or hashtag to identify relevant messages, e.g. `'#Hammer_and_Bolter'`
 
 ---
 
@@ -43,8 +43,8 @@ Replace `YOUR_API_ID`, `YOUR_API_HASH`, `YOUR_CHANNEL_ID`, and `YOUR_HASHTAG_OR_
 Clone the repository or download the script to your local machine:
 
 ```bash
-git clone https://github.com/your-username/telegram-video-downloader.git
-cd telegram-video-downloader
+git clone https://github.com/AlexeyPlatkovsky/TelegramVideoDownloader.git
+cd TelegramVideoDownloader
 ```
 
 #### Install Dependencies
@@ -54,10 +54,8 @@ Make sure the required libraries are installed:
 pip install -r requirements.txt
 ```
 
-*(If no `requirements.txt` file is provided, use the command in the "Before Run" section.)*
-
-#### Create the Logs Folder
-The script automatically creates a `logs` folder in the script directory if it doesn't exist. No manual steps are needed.
+#### Create the Logs and Download Folder
+The script automatically creates a `logs` and `download` folder in the script directory if it doesn't exist. No manual steps are needed.
 
 ---
 
@@ -70,11 +68,18 @@ python download_videos.py --download-folder "path_to_download_folder"
 ```
 
 Replace `"path_to_download_folder"` with the directory where you want the downloaded videos to be saved.
-If no `--download-folder` is specified, videos are saved in the default downloads folder.
+If no `--download-folder` is specified, videos are saved in the default `downloads` folder.
 
 ##### Example:
 ```bash
 python download_videos.py --download-folder "C:/Users/YourName/Videos"
+```
+
+#### First time run:  
+When you run script first time, Telegram can ask you to enter your phone number and security code
+```angelscript
+Please enter your phone (or bot token):
+Please enter the code you received: 
 ```
 
 ---
