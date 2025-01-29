@@ -3,3 +3,4 @@
 /.venv/
 *.session
 /.idea
+config_copy.ini
