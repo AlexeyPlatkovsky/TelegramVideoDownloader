@@ -39,7 +39,7 @@ Replace `YOUR_API_ID`, `YOUR_API_HASH`, `YOUR_CHANNEL_ID`, and `YOUR_HASHTAG_OR_
   - Create a new application to obtain the `api_id` and `api_hash`.
 
 - **channel_id:**
-  - Use the `get_channel_id.py` script (explained below) to fetch the ID of the target channel.
+  - Use the `get_channel_id.py` script ([explained below](#purpose-of-get_channel_idpy)) to fetch the ID of the target channel.
 
 - **MESSAGE_TEXT:**
   - Specify the hashtag or keyword to filter messages containing videos. For example, `#MyVideos`.
