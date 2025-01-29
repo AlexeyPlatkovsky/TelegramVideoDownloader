@@ -73,8 +73,6 @@ The script automatically creates a `logs` and `download` folder in the script di
 #### Purpose of `get_channel_id.py`
 
 The `get_channel_id.py` script helps fetch the IDs of all accessible Telegram channels and chats for your account. These IDs are necessary for configuring the `channel_id` field in the `config.ini` file.
-
-#### How to Use:
 1. **Run the script:**
    ```bash
    python get_channel_id.py
@@ -82,7 +80,6 @@ The `get_channel_id.py` script helps fetch the IDs of all accessible Telegram ch
 2. **Authenticate with Your Telegram Account:**
  - Enter your Telegram phone number. 
  - Verify the login by entering the code sent to your Telegram app.  
-
 3. **Note the channel_id:**
  - Look for the desired channel in the script output.  
  - Copy its ID and update the `channel_id` field in your `config.ini` file.
