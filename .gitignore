@@ -1,6 +1,5 @@
 /downloads/
 /logs/
 /.venv/
-user_session.session
+*.session
 /.idea
-config.ini
